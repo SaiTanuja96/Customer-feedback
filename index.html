@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta charset="utf-8"/>
+    <title>Feedback</title>
+    
+<script src="https://www.gstatic.com/firebasejs/4.8.2/firebase.js"></script>
+
+    
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> 
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"> 
+
+ 
+ <link rel="stylesheet" href = "index.css" >
+       
+    </head>
+     
+    <body>
+    
+        <div class="maindiv">
+        <h1 align="center">FEEDBACK</h1>
+            <textarea id="emailid" placeholder="enter email"></textarea><br>
+              <textarea id="user" placeholder="enter name"></textarea><br>
+               <textarea id="fdback" placeholder="enter feedback"></textarea><br>
+        <button id="subbtn"  class="btn btn-primary" onclick="submitClick()">SUBMIT</button>"
+        </div>
+            
+            
+            
+      
+    
+    
+    <script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyBLiP56WFsGm5dbBD-fdgJ5Fb4-8MFrepc",
+    authDomain: "customer-feedback-8c6ad.firebaseapp.com",
+    databaseURL: "https://customer-feedback-8c6ad.firebaseio.com",
+    projectId: "customer-feedback-8c6ad",
+    storageBucket: "",
+    messagingSenderId: "1029581099128"
+  };
+  firebase.initializeApp(config);
+</script>
+    <script src="index.js"></script>
+    
+    
+    
+    
+    
+    </body>
+
+</html>
